@@ -1,0 +1,98 @@
+import { DreamItem } from "@/types/cashflow";
+
+export const DREAMS: DreamItem[] = [
+  {
+    id: "stock_market_kids",
+    name: "Bolsa de Valores para Crianças",
+    nameEn: "Stock Market for Kids",
+    description: "Financie uma escola de negócios e investimentos para jovens",
+    descriptionEn: "Fund a financial literacy school for young investors",
+    cost: 50000,
+    category: "Filantropia",
+  },
+  {
+    id: "yacht_racing",
+    name: "Iate de Competição no Mediterrâneo",
+    nameEn: "Yacht Racing in Mediterranean",
+    description: "Navegue pelas ilhas gregas e italianas em seu próprio iate",
+    descriptionEn: "Sail the Greek and Italian islands on your own racing yacht",
+    cost: 100000,
+    category: "Estilo de Vida",
+  },
+  {
+    id: "cannes_festival",
+    name: "Festival de Cinema de Cannes",
+    nameEn: "Cannes Film Festival VIP",
+    description: "Festa VIP com celebridades na Riviera Francesa",
+    descriptionEn: "VIP red carpet party on the French Riviera",
+    cost: 125000,
+    category: "Aventura",
+  },
+  {
+    id: "african_safari",
+    name: "Safári Fotográfico na África",
+    nameEn: "African Photo Safari",
+    description: "Expedição exclusiva pela savana africana com amigos",
+    descriptionEn: "Exclusive photo expedition across African savannah",
+    cost: 150000,
+    category: "Aventura",
+  },
+  {
+    id: "private_fishing_island",
+    name: "Cabana de Pesca em Lago Privado",
+    nameEn: "Private Lake Fishing Lodge",
+    description: "Refúgio particular em Montana cercado pela natureza",
+    descriptionEn: "Private wilderness lodge retreat in Montana",
+    cost: 200000,
+    category: "Estilo de Vida",
+  },
+  {
+    id: "asian_capitals",
+    name: "Tour pelas Capitais da Ásia",
+    nameEn: "Asian Capitals Luxury Tour",
+    description: "Viagem de primeira classe e cultura milenar pelo Oriente",
+    descriptionEn: "First-class travel across iconic Asian capitals",
+    cost: 250000,
+    category: "Aventura",
+  },
+  {
+    id: "world_sailing",
+    name: "Volta ao Mundo de Veleiro",
+    nameEn: "Around the World Sail",
+    description: "Um ano inteiro navegando pelos sete mares",
+    descriptionEn: "A full year sailing across the seven seas",
+    cost: 300000,
+    category: "Aventura",
+  },
+  {
+    id: "private_jet",
+    name: "Jato Particular por 1 Ano",
+    nameEn: "Private Jet for 1 Year",
+    description: "Viaje para qualquer lugar do planeta quando quiser",
+    descriptionEn: "Fly anywhere on the planet anytime on demand",
+    cost: 400000,
+    category: "Luxo",
+  },
+  {
+    id: "save_rainforest",
+    name: "Salvar a Floresta Amazônica",
+    nameEn: "Save the Amazon Rainforest",
+    description: "Crie uma reserva ecológica permanente de proteção ambiental",
+    descriptionEn: "Establish a permanent nature reserve in the Amazon",
+    cost: 500000,
+    category: "Filantropia",
+  },
+  {
+    id: "custom_dream",
+    name: "Sonho Personalizado (Tabuleiro)",
+    nameEn: "Custom Dream (Board)",
+    description: "Defina o nome e o custo do sonho escolhido no tabuleiro",
+    descriptionEn: "Set custom name and cost for dream on the board",
+    cost: 150000,
+    category: "Personalizado",
+  },
+];
+
+export function getDreamById(id: string): DreamItem {
+  return DREAMS.find((d) => d.id === id) || DREAMS[1];
+}
